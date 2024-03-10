@@ -64,16 +64,16 @@ I'm examining the visa trends for the year 2024, specifically focusing on the co
 
 3.  **Comparative Analysis:** Separate graphs enable direct comparison between "Visa Issuances at Offices Abroad" and "USCIS Adjustments."
 
-#### **Re-Design 3: Scatter Plot**
+#### **Re-Design 3: Bubble Plot**
 
 ![](images/point.png)
 
 **Fig4: Redesigned Graph (using Plotly)**
 
-#### why i used Scatter Plot: 
+#### why i used Bubble Plot: 
 
-1.  **Relationship Analysis:** Scatter plots visualize relationships between two variables.
+1.  **Visualizing Relationships**: Bubble plots efficiently illustrate the correlation between variables, aiding in understanding the data's interconnections.
 
-2.  **Strength Assessment:** Spread of points indicates the strength of the relationship.
+2.  **Assessing Magnitude**: Bubble size directly represents the strength of the relationship, providing a clear indication of its significance within the data set.
 
-3.  **Identification of Outliers:** High-value points highlight notable instances in the data.
+3.  **Spotting Outlines**: Notable data points are easily spotted through the presence of larger bubbles, enabling swift identification of outlines in the data set.
