@@ -3,7 +3,7 @@ title: "Design-Codes"
 editor: visual
 ---
 
-I imported the data from the SAS website and created a dataframe named "ImmigrantVisaNumber2014." The original data pertains to "Immigrant Visa Number Use by Category Fiscal Year 2014."
+I imported the data from the SAS website and created a dataframe named "ImmigrantVisaNumber2014." The original data pertains to "Immigrant Visa Number Use by Category Fiscal Year 2014".
 
 ```{r}
 ImmigrantVisaNumber2014 = data.frame( 
@@ -82,7 +82,7 @@ scale_color_manual(values = c("Visa_Issuances_At_Offices_Abroad" = "skyblue", "U
 highlight_plot = ggplotly(base_plot, tooltip = c("Category", "value", "variable")) 
 
 highlight_plot = highlight_plot %>%  
-layout(legend = list(orientation = "h", x = 0.5, y = -0.1, traceorder = 'normal')) 
+layout(legend = list(orientation = "h", x = 0.2, y = -0.1, traceorder = 'normal')) 
 
 highlight_plot = highlight_plot %>%  
 layout(title = list(text = "Immigrant Visa Number Use By Category FY 2014", x = 0.5, xanchor = "center")) 
@@ -90,14 +90,14 @@ layout(title = list(text = "Immigrant Visa Number Use By Category FY 2014", x = 
 highlight_plot 
 ```
 
-#### **Design 3: Scatter Plot with Plotly**
+#### **Design 3: Bubble Plot with Plotly**
 
 ```{r}
 
 library(ggplot2) 
 library(plotly) 
 
-base_plot <- ggplot(melted_data, aes(x = Category, y = value, size = value, color = variable)) + geom_point(alpha = 0.9) + labs(title = "Immigrant Visa Number Use By Category FY 2014", x = "Category", y = "Count") + scale_color_manual(values = c("Visa_Issuances_At_Offices_Abroad" = "skyblue", "USCIS_Adjustments" = "red")) + 
+base_plot = ggplot(melted_data, aes(x = Category, y = value, size = value, color = variable)) + geom_point(alpha = 0.9) + labs(title = "Immigrant Visa Number Use By Category FY 2014", x = "Category", y = "Count") + scale_color_manual(values = c("Visa_Issuances_At_Offices_Abroad" = "skyblue", "USCIS_Adjustments" = "red")) + 
 theme( text = element_text(size = 10, face = "bold"), 
        axis.text.x = element_text(size = 10, face = "bold"), 
        axis.text.y = element_text(size = 10, face = "bold"), 
@@ -109,7 +109,7 @@ highlight_plot <- ggplotly(base_plot, tooltip = c("Category", "value", "variable
 
 highlight_plot <- highlight_plot %>%layout( 
   title = list(text = "Bubble Chart of Visa Issuances and USCIS Adjustments", x = 0.5, xanchor = "center"), 
-  legend = list(orientation = "h", x = 0.1, y = -0.3, traceorder = 'normal', title = list(text = NULL))) 
+  legend = list(orientation = "h", x = 0.2, y = -0.3, traceorder = 'normal', title = list(text = NULL))) 
 
 highlight_plot 
 

@@ -3,4 +3,4 @@ title: "Explanation"
 editor: visual
 ---
 
-video link
+video link.
