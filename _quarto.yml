@@ -1,0 +1,13 @@
+project: 
+  type: website 
+  output-dir: docs 
+
+website:
+  title: "Mid Project1" 
+  navbar: 
+    left: 
+    - Bad-Graph.qmd
+    - Re-Design.qmd
+format: 
+  html: 
+    theme: cosmo 
