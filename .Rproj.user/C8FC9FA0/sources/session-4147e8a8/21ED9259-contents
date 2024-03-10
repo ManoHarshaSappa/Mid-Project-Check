@@ -7,6 +7,7 @@ website:
   navbar: 
     left: 
     - Bad-Graph.qmd
+    - Re-Design.qmd
 format: 
   html: 
     theme: cosmo 
