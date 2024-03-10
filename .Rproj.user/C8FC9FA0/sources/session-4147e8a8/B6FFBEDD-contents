@@ -4,23 +4,47 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Re-Design : 
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+I want to make a bad graph better using what I know. I aim to create a perfect and easily understandable graph. Additionally, I plan to visualize the data in various graphs to check if any new information emerges beyond my current understanding.
 
-## Running Code
+**The SAS website gave me the original data for "Immigrant Visa Number Use by Category Fiscal Year 2014:**
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+![](images/visas_table_orig (1).png){fig-align="center" width="500"}
 
-```{r}
-1 + 1
-```
+##### Fig1:  **2024 Immigration Visa Data Table**
 
-You can add options to executable code like this
+I'm making a data frame called "**ImmigrantVisaNumber2014**" and adding columns named "Category," "**Visa Issuances at Offices Abroad**," and "**USCIS Adjustments**", I'm putting in the data from **Fig1** into these columns.
 
 ```{r}
-#| echo: false
-2 * 2
+ImmigrantVisaNumber2014 = data.frame( 
+Category = factor(c("F1", "F2A", "F2B", "F4", "E1", "E2", "E3", "E4", "E5", "DV"), levels = c("F1", "F2A", "F2B", "F4", "E1", "E2", "E3", "E4", "E5", "DV")), 
+Visa_Issuances_At_Offices_Abroad = c(21511, 80041, 15137, 21931, 59140, 1680, 1880, 7088, 1489, 9228), 
+USCIS_Adjustments = c(2480, 9451, 2382, 2100, 7020, 38928, 47191, 35611, 6798, 1464) 
+) 
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+i was imported ggplot2 library,
+
+```{r}
+library(ggplot2)  
+melted_data = reshape2::melt(ImmigrantVisaNumber2014, id.vars = "Category")  
+
+# Reorder the levels of the variable factor 
+melted_data$variable = factor(melted_data$variable, levels = 
+c("Visa_Issuances_At_Offices_Abroad","USCIS_Adjustments")) 
+ggplot(melted_data, aes(x = Category, y = value, fill = variable)) +
+geom_bar(stat = "identity", width = 0.4) +  
+labs(title = "Immigrant Visa Number\nUse By Category\nFiscal Year 2014",x = "Category", y = "Count") +  
+scale_fill_manual(values = c("USCIS_Adjustments" = "indianred", "Visa_Issuances_At_Offices_Abroad" = "steelblue")) +  
+theme(legend.position = "bottom", 
+      text = element_text(size = 10, face = "bold"), 
+      axis.text.x = element_text(size = 6, face = "bold"), 
+      axis.text.y = element_text(size = 6, face = "bold"), 
+      axis.title.x = element_text(size = 10, face = "bold"), 
+      axis.title.y = element_text(size = 10, face = "bold"), 
+      plot.title = element_text(size = 10, face = "bold", hjust = 0.5),
+      legend.title = element_text(face = "bold")) + 
+guides(fill = guide_legend(title = NULL)) 
+
+```
