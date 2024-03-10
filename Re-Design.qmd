@@ -4,8 +4,6 @@ format: html
 editor: visual
 ---
 
-## Re-Design : 
-
 I want to make a bad graph better using what I know. I aim to create a perfect and easily understandable graph. Additionally, I plan to visualize the data in various graphs to check if any new information emerges beyond my current understanding.
 
 **The SAS website gave me the original data for "Immigrant Visa Number Use by Category Fiscal Year 2014:**
@@ -28,7 +26,7 @@ USCIS_Adjustments = c(2480, 9451, 2382, 2100, 7020, 38928, 47191, 35611, 6798, 1
 
 -   Implemented the GGplot2 library to re-imagine the visualization, showcasing a bar plot utilizing the given data values.
 
-![](images/brar){fig-align="center"}
+![](images/Screenshot 2024-03-10 at 5.47.08 PM.png){fig-align="center" width="600"}
 
 The initial graph used a 3D model, which can sometimes be confusing and make it challenging for viewers to understand the data. The redesigned graph, now in a simpler 2D format, is clearer and more user-friendly.
 
@@ -42,6 +40,14 @@ I made a change in the Redesign1 by using **Plotly library** and **Position = 'd
 
 **Fig3: Redesigned Graph (using Plotly)**
 
+#### Why i used Bar Plot: 
+
+1.  **Visual Comparison:** Bar graphs facilitate easy comparison between categories.
+
+2.  **Enhanced Clarity:** Adjusting bar width and using a dodge position improves visual distinction.
+
+3.  **Improved Comprehension:** Side-by-side bars clarify the comparison between "Visa Issuances at Offices Abroad" and "USCIS Adjustments."
+
 #### **Re-Design 2: Line Plot with GGplot2** 
 
 I'm examining the visa trends for the year 2024, specifically focusing on the counts for 'Visa Issuances at Offices Abroad' and 'USCIS Adjustments.' By analyzing these columns individually, I aim to gain insights into the distribution and trends of visas issued in each category for the specified year.
@@ -50,12 +56,24 @@ I'm examining the visa trends for the year 2024, specifically focusing on the co
 
 **Fig4: Redesigned Graph (using Plotly)**
 
-I designed individual line graphs to better understand the data set. For 'Visa Issuances at Offices Abroad,' the values go up to **80,041**, while for **'USCIS Adjustments',** the highest values reach **47,191**. To comprehend the trends in both visa issuances and USCIS adjustments, I created two separate line graphs for a clearer analysis.
+#### Why i used line graph : 
+
+1.  **Trend Analysis:** Line graphs are used to understand trends over time or categories.
+
+2.  **Data Range:** Effective for displaying wide-ranging values in the graph
+
+3.  **Comparative Analysis:** Separate graphs enable direct comparison between "Visa Issuances at Offices Abroad" and "USCIS Adjustments."
 
 #### **Re-Design 3: Scatter Plot**
-
-After making this plot, I see the patterns and trends in the values. I understand how strong the relationship is and how the values are spread out. In the plot, the big marked points have high values. There are two colors: blue and red. I used the scatter plot to see how Visa Issuance and USCIS Adjustments relate to each other and how strong that relationship is.
 
 ![](images/point.png)
 
 **Fig4: Redesigned Graph (using Plotly)**
+
+#### why i used Scatter Plot: 
+
+1.  **Relationship Analysis:** Scatter plots visualize relationships between two variables.
+
+2.  **Strength Assessment:** Spread of points indicates the strength of the relationship.
+
+3.  **Identification of Outliers:** High-value points highlight notable instances in the data.

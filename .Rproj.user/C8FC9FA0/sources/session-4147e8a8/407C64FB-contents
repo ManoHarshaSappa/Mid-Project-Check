@@ -3,7 +3,7 @@ title: "Design-Codes"
 editor: visual
 ---
 
-Design1 :
+I imported the data from the SAS website and created a dataframe named "ImmigrantVisaNumber2014." The original data pertains to "Immigrant Visa Number Use by Category Fiscal Year 2014."
 
 ```{r}
 ImmigrantVisaNumber2014 = data.frame( 

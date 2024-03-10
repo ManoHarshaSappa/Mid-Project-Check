@@ -175,8 +175,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="re-design" class="level2">
-<h2 class="anchored" data-anchor-id="re-design">Re-Design :</h2>
 <p>I want to make a bad graph better using what I know. I aim to create a perfect and easily understandable graph. Additionally, I plan to visualize the data in various graphs to check if any new information emerges beyond my current understanding.</p>
 <p><strong>The SAS website gave me the original data for “Immigrant Visa Number Use by Category Fiscal Year 2014:</strong></p>
 <div class="quarto-figure quarto-figure-center">
@@ -220,6 +218,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><strong>Fig3: Redesigned Graph (using Plotly)</strong></p>
 </section>
+<section id="why-i-used-bar-plot" class="level4">
+<h4 class="anchored" data-anchor-id="why-i-used-bar-plot">Why i used Bar Plot:</h4>
+<ol type="1">
+<li><p><strong>Visual Comparison:</strong> Bar graphs facilitate easy comparison between categories.</p></li>
+<li><p><strong>Enhanced Clarity:</strong> Adjusting bar width and using a dodge position improves visual distinction.</p></li>
+<li><p><strong>Improved Comprehension:</strong> Side-by-side bars clarify the comparison between “Visa Issuances at Offices Abroad” and “USCIS Adjustments.”</p></li>
+</ol>
+</section>
 <section id="re-design-2-line-plot-with-ggplot2" class="level4">
 <h4 class="anchored" data-anchor-id="re-design-2-line-plot-with-ggplot2"><strong>Re-Design 2: Line Plot with GGplot2</strong></h4>
 <p>I’m examining the visa trends for the year 2024, specifically focusing on the counts for ‘Visa Issuances at Offices Abroad’ and ‘USCIS Adjustments.’ By analyzing these columns individually, I aim to gain insights into the distribution and trends of visas issued in each category for the specified year.</p>
@@ -229,16 +235,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p><strong>Fig4: Redesigned Graph (using Plotly)</strong></p>
-<p>I designed individual line graphs to better understand the data set. For ‘Visa Issuances at Offices Abroad,’ the values go up to <strong>80,041</strong>, while for <strong>‘USCIS Adjustments’,</strong> the highest values reach <strong>47,191</strong>. To comprehend the trends in both visa issuances and USCIS adjustments, I created two separate line graphs for a clearer analysis.</p>
+</section>
+<section id="why-i-used-line-graph" class="level4">
+<h4 class="anchored" data-anchor-id="why-i-used-line-graph">Why i used line graph :</h4>
+<ol type="1">
+<li><p><strong>Trend Analysis:</strong> Line graphs are used to understand trends over time or categories.</p></li>
+<li><p><strong>Data Range:</strong> Effective for displaying wide-ranging values in the graph</p></li>
+<li><p><strong>Comparative Analysis:</strong> Separate graphs enable direct comparison between “Visa Issuances at Offices Abroad” and “USCIS Adjustments.”</p></li>
+</ol>
 </section>
 <section id="re-design-3-scatter-plot" class="level4">
 <h4 class="anchored" data-anchor-id="re-design-3-scatter-plot"><strong>Re-Design 3: Scatter Plot</strong></h4>
 <p>After making this plot, I see the patterns and trends in the values. I understand how strong the relationship is and how the values are spread out. In the plot, the big marked points have high values. There are two colors: blue and red. I used the scatter plot to see how Visa Issuance and USCIS Adjustments relate to each other and how strong that relationship is.</p>
 <p><img src="images/point.png" class="img-fluid"></p>
 <p><strong>Fig4: Redesigned Graph (using Plotly)</strong></p>
-
-
 </section>
+<section id="why-i-used-scatter-plot" class="level4">
+<h4 class="anchored" data-anchor-id="why-i-used-scatter-plot">why i used Scatter Plot:</h4>
+<ol type="1">
+<li><p><strong>Relationship Analysis:</strong> Scatter plots visualize relationships between two variables.</p></li>
+<li><p><strong>Strength Assessment:</strong> Spread of points indicates the strength of the relationship.</p></li>
+<li><p><strong>Identification of Outliers:</strong> High-value points highlight notable instances in the data.</p></li>
+</ol>
+
+
 </section>
 
 </main> <!-- /main -->
