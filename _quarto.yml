@@ -8,6 +8,7 @@ website:
     left: 
     - Bad-Graph.qmd
     - Re-Design.qmd
+    - Design-Codes.qmd
 format: 
   html: 
     theme: cosmo 

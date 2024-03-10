@@ -1,14 +1,14 @@
 {
-    "id": "B6FFBEDD",
-    "path": "~/Desktop/stat 515 /checking/Mid Project Check/Re-Design.qmd",
-    "project_path": "Re-Design.qmd",
+    "id": "407C64FB",
+    "path": "~/Desktop/stat 515 /checking/Mid Project Check/Design-Codes.qmd",
+    "project_path": "Design-Codes.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1710084355875.0,
+    "created": 1710094520732.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 4,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -17,17 +17,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "18,0",
+        "cursorPosition": "94,0",
         "scrollLine": "0",
-        "rmdVisualModeLocation": "1072:635.2000122070312",
-        "docOutlineSize": "60"
+        "rmdVisualModeLocation": "4355:3312.800048828125"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710094915,
+    "lastKnownWriteTime": 1710095621,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710094915947,
+    "last_content_update": 1710095621095,
     "read_only": false,
     "read_only_alternatives": []
 }
