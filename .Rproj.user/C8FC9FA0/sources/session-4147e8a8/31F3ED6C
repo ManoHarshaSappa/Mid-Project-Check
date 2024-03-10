@@ -1,14 +1,14 @@
 {
-    "id": "149B0FE7",
-    "path": "~/Desktop/stat 515 /checking/Mid Project Check/Explanation.qmd",
-    "project_path": "Explanation.qmd",
+    "id": "31F3ED6C",
+    "path": "~/Desktop/stat 515 /checking/Mid Project Check/References.qmd",
+    "project_path": "References.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1710096442435.0,
+    "created": 1710099232418.0,
     "source_on_save": false,
-    "relative_order": 5,
+    "relative_order": 6,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -17,16 +17,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "1,0",
+        "cursorPosition": "0,0",
         "scrollLine": "0",
-        "rmdVisualModeLocation": "2:0"
+        "rmdVisualModeLocation": "52:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710096451,
+    "lastKnownWriteTime": 1710099310,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710096451030,
+    "last_content_update": 1710099310229,
     "read_only": false,
     "read_only_alternatives": []
 }
