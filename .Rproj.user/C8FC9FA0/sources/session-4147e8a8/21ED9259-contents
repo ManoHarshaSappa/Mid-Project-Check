@@ -9,6 +9,9 @@ website:
     - Bad-Graph.qmd
     - Re-Design.qmd
     - Design-Codes.qmd
+    - Explanation.qmd
+    - References.qmd
+    
 format: 
   html: 
     theme: cosmo 
