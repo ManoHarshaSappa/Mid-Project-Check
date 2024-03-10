@@ -95,6 +95,12 @@ print(plotly_gg)
 
 ```
 
+After redesigning the graph with Plotly, I've made it more user-friendly and easy to understand for everyone.
+
+![](images/1 .png){fig-align="center" width="700"}
+
+**Fig3: Redesigned Graph (using Plotly)**
+
 #### **Re-Design 2: Line Plot with GGplot2** 
 
 I'm examining the visa trends for the year 2024, specifically focusing on the counts for 'Visa Issuances at Offices Abroad' and 'USCIS Adjustments.' By analyzing these columns individually, I aim to gain insights into the distribution and trends of visas issued in each category for the specified year.
@@ -119,4 +125,36 @@ layout(title = list(text = "Immigrant Visa Number Use By Category FY 2014", x = 
 
 # Display the interactive plot 
 highlight_plot 
+```
+
+I designed individual line graphs to better understand the data set. For 'Visa Issuances at Offices Abroad,' the values go up to **80,041**, while for **'USCIS Adjustments',** the highest values reach **47,191**. To comprehend the trends in both visa issuances and USCIS adjustments, I created two separate line graphs for a clearer analysis.
+
+![](images/redesign2.png){fig-align="center"}
+
+Redesign_3
+
+```{r}
+library(ggplot2) 
+library(plotly) 
+
+base_plot <- ggplot(melted_data, aes(x = Category, y = value, size = value, color = variable)) + geom_point(alpha = 0.9) + labs(title = "Bubble Chart of Visa Issuances and USCIS Adjustments", x = "Category", y = "Count") + scale_color_manual(values = c("Visa_Issuances_At_Offices_Abroad" = "skyblue", "USCIS_Adjustments" = "red")) + 
+theme( text = element_text(size = 10, face = "bold"), 
+       axis.text.x = element_text(size = 10, face = "bold"), 
+       axis.text.y = element_text(size = 10, face = "bold"), 
+       axis.title.x = element_text(size = 12, face = "bold"), 
+       axis.title.y = element_text(size = 12, face = "bold"), 
+       plot.title = element_text(size = 10, face = "bold", hjust = 0.5)) 
+
+# Convert ggplot to a plotly object 
+highlight_plot <- ggplotly(base_plot, tooltip = c("Category", "value", "variable")) 
+
+# Customize the layout 
+highlight_plot <- highlight_plot %>%layout( 
+  title = list(text = "Bubble Chart of Visa Issuances and USCIS Adjustments", x = 0.5, xanchor = "center"), 
+  legend = list(orientation = "h", x = 0.1, y = -0.3, traceorder = 'normal', title = list(text = NULL))) 
+
+# Display the interactive plot 
+highlight_plot 
+
+ 
 ```
