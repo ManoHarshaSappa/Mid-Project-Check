@@ -3,8 +3,8 @@ title: "References"
 editor: visual
 ---
 
-\[1\] Title: "*Immigrant Visa Number Use by Category Fiscal Year 2024*", Author: *Robert Allison*, Published: SAS Learning Post, Topic : "Analytics, Data Visualization",Date of published: March 20, 2015, url : <https://blogs.sas.com/content/sastraining/2015/03/25/spotting-a-misleading-chart/>.
+\[1\] Title: "*Immigrant Visa Number Use by Category Fiscal Year 2024*", Author: *Robert Allison*, Published: SAS Learning Post, Topic : "Analytics, Data Visualization",Date of published: March 20, 2015, Url : <https://blogs.sas.com/content/sastraining/2015/03/25/spotting-a-misleading-chart/>.
 
-\[2\] Author: "*U.S. Department of State*", Title: "*US immigration visas*", Accessed Date: March 10, 2024, url: <https://travel.state.gov/content/travel/en/legal/visa-law0/visa-statistics.html.html>.
+\[2\] Author: "*U.S. Department of State*", Title: "*US immigration visas*", Accessed Date: March 10, 2024, Url: <https://travel.state.gov/content/travel/en/legal/visa-law0/visa-statistics.html.html>.
 
-\[3\] Title: "*Data Visualization with ggplot2 : : CHEAT SHEET*", Author : "*STAT3022*", Accessed Date: March 10, 2024, url: <https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/data-visualization-2.1.pdf>.
+\[3\] Title: "*Data Visualization with ggplot2 : : CHEAT SHEET*", Author : "*STAT3022*", Accessed Date: March 10, 2024, Url: <https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/data-visualization-2.1.pdf>.

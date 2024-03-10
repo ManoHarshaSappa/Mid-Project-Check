@@ -24,9 +24,9 @@ USCIS_Adjustments = c(2480, 9451, 2382, 2100, 7020, 38928, 47191, 35611, 6798, 1
 
 #### **Re-Design 1: Bar Plot with GGplot2** 
 
--   Implemented the GGplot2 library to re-imagine the visualization, showcasing a bar plot utilizing the given data values.
+![](images/first photo.jpg){fig-align="center" width="500"}
 
-![](images/Screenshot 2024-03-10 at 5.47.08 PM.png){fig-align="center" width="600"}
+-   Implemented the GGplot2 library to re-imagine the visualization, showcasing a bar plot utilizing the given data values.
 
 The initial graph used a 3D model, which can sometimes be confusing and make it challenging for viewers to understand the data. The redesigned graph, now in a simpler 2D format, is clearer and more user-friendly..
 

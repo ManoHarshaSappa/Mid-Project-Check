@@ -3,7 +3,7 @@
     "path": "~/Desktop/stat 515 /checking/Mid Project Check/Re-Design.qmd",
     "project_path": "Re-Design.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "4016338643",
     "contents": "",
     "dirty": false,
     "created": 1710084355875.0,
@@ -19,15 +19,15 @@
         "rmdVisualCollapsedChunks": "",
         "cursorPosition": "24,0",
         "scrollLine": "0",
-        "rmdVisualModeLocation": "1435:949.5999755859375",
+        "rmdVisualModeLocation": "1099:706.4000244140625",
         "docOutlineSize": "60"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710107960,
+    "lastKnownWriteTime": 1710109750,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710107960947,
+    "last_content_update": 1710109750622,
     "read_only": false,
     "read_only_alternatives": []
 }
