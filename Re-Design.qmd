@@ -24,7 +24,9 @@ USCIS_Adjustments = c(2480, 9451, 2382, 2100, 7020, 38928, 47191, 35611, 6798, 1
 ) 
 ```
 
-i was imported ggplot2 library,
+#### **Re-Design 1: Bar Plot with GGplot2** 
+
+-   Implemented the GGplot2 library to re-imagine the visualization, showcasing a bar plot utilizing the given data values.
 
 ```{r}
 library(ggplot2)  
@@ -47,4 +49,74 @@ theme(legend.position = "bottom",
       legend.title = element_text(face = "bold")) + 
 guides(fill = guide_legend(title = NULL)) 
 
+```
+
+The initial graph used a 3D model, which can sometimes be confusing and make it challenging for viewers to understand the data. The redesigned graph, now in a simpler 2D format, is clearer and more user-friendly.
+
+![](images/fig2-01.jpg){fig-align="center"}
+
+I made a change in the Redesign1 by using **Plotly library** and **Position = 'dodge'** and **width** of the bars are **0.7** to compare 'Visa Issuances at Offices Abroad' and 'USCIS Adjustments' more effectively. In the initial design, I found a bit of difficulty in understanding the bar representing 'Visa Issuances at Offices Abroad,' so I placed both bars side by side to enhance clarity and better comprehend the comparison
+
+```{r}
+library(ggplot2)
+library(reshape2)
+library(plotly)
+
+# Melt the data frame
+melted_data <- reshape2::melt(ImmigrantVisaNumber2014, id.vars = "Category")
+
+# Reorder the levels of the variable factor
+melted_data$variable <- factor(melted_data$variable, levels = c("Visa_Issuances_At_Offices_Abroad", "USCIS_Adjustments"))
+
+# Create a ggplot object with dodge positioning
+gg <- ggplot(melted_data, aes(x = Category, y = value, fill = variable)) +
+  geom_bar(stat = "identity", position = "dodge", width = 0.7) +
+  labs(title = "Immigrant Visa Number Use By Category Fiscal Year 2014", x = "Category", y = "Count") +
+  scale_fill_manual(values = c("USCIS_Adjustments" = "indianred", "Visa_Issuances_At_Offices_Abroad" = "steelblue")) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10, face = "bold"),
+        axis.text.x = element_text(size = 6, face = "bold"),
+        axis.text.y = element_text(size = 6, face = "bold"),
+        axis.title.x = element_text(size = 10, face = "bold"),
+        axis.title.y = element_text(size = 10, face = "bold"),
+        plot.title = element_text(size = 9, face = "bold", hjust = 0.5),  # Add a comma here
+        legend.title = element_text(face = "bold")) +
+  guides(fill = guide_legend(title = NULL))
+
+# Convert ggplot object to plotly object
+plotly_gg <- ggplotly(gg)
+
+# Modify the plotly object to move the legend below
+plotly_gg <- plotly_gg %>%
+  layout(legend = list(orientation = "h", y = -0.2, x = 0.2))
+
+# Print the interactive plot
+print(plotly_gg)
+
+```
+
+#### **Re-Design 2: Line Plot with GGplot2** 
+
+I'm examining the visa trends for the year 2024, specifically focusing on the counts for 'Visa Issuances at Offices Abroad' and 'USCIS Adjustments.' By analyzing these columns individually, I aim to gain insights into the distribution and trends of visas issued in each category for the specified year.
+
+```{r}
+library(ggplot2) 
+library(plotly) 
+base_plot = ggplot(melted_data, aes(x = Category, y = value, color = variable, group = variable)) + geom_line() + facet_wrap(~variable, scales = "free_y") + 
+labs(title = "Immigrant Visa Number Use By Category FY 2014", x = "Category", y = "Count") + 
+scale_color_manual(values = c("Visa_Issuances_At_Offices_Abroad" = "skyblue", "USCIS_Adjustments" = "red")) + theme(legend.position = "bottom") 
+
+# Convert ggplot to a plotly object 
+highlight_plot = ggplotly(base_plot, tooltip = c("Category", "value", "variable")) 
+
+# Move the legend below the plot 
+highlight_plot = highlight_plot %>%  
+layout(legend = list(orientation = "h", x = 0.5, y = -0.1, traceorder = 'normal')) 
+
+# Adjust the title size or width 
+highlight_plot = highlight_plot %>%  
+layout(title = list(text = "Immigrant Visa Number Use By Category FY 2014", x = 0.5, xanchor = "center")) 
+
+# Display the interactive plot 
+highlight_plot 
 ```
