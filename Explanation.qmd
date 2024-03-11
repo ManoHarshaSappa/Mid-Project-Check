@@ -3,4 +3,8 @@ title: "Explanation"
 editor: visual
 ---
 
-video link.
+# Stat-515, Mid Project 01 Video Presentation... 
+
+{{< video https://youtu.be/ZLJhq8NXSNo >}}
+
+In this mid-project video, I talked about creating a website and improving graphs. The website has five labels with specific purposes. In the "Bad-Graph" label, I carefully explained where I found problematic graphs and the sources of the datasets. The "Re-Design" label showed three improved versions of the original graphs with pictures. I organized all the codes used in the project under the "Design-Codes" label for easy reference. The "Explanation" label includes a video where I explained my design choices and the changes I made in detail. The "Reference" label gives credit to external sources that helped with the project. This organized approach helps make my mid-project work clear and understandable.

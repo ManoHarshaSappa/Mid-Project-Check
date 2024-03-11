@@ -7,9 +7,9 @@ I imported the data from the SAS website and created a dataframe named "Immigran
 
 ```{r}
 ImmigrantVisaNumber2014 = data.frame( 
-Category = factor(c("F1", "F2A", "F2B", "F4", "E1", "E2", "E3", "E4", "E5", "DV"), levels = c("F1", "F2A", "F2B", "F4", "E1", "E2", "E3", "E4", "E5", "DV")), 
-Visa_Issuances_At_Offices_Abroad = c(21511, 80041, 15137, 21931, 59140, 1680, 1880, 7088, 1489, 9228), 
-USCIS_Adjustments = c(2480, 9451, 2382, 2100, 7020, 38928, 47191, 35611, 6798, 1464) 
+Category = factor(c("F1", "F2A", "F2B", "F3" ,"F4", "E1", "E2", "E3", "E4", "E5", "DV"), levels = c("F1", "F2A", "F2B","F3", "F4", "E1", "E2", "E3", "E4", "E5", "DV")), 
+Visa_Issuances_At_Offices_Abroad = c(21511, 80041, 15137, 21931, 59140, 1680, 1880, 7088, 1489, 922, 51018), 
+USCIS_Adjustments = c(2480, 9451, 2382, 2100, 7020, 38928, 47191, 35611, 6798, 1464 , 1324) 
 ) 
 ```
 
@@ -37,7 +37,7 @@ guides(fill = guide_legend(title = NULL))
 
 ```
 
-#### **Design 1: Bar Plot with Plotly** 
+#### **Design 1: Bar Plot with Plotly**
 
 ```{r}
 library(ggplot2)
@@ -70,7 +70,7 @@ print(plotly_gg)
 
 ```
 
-#### **Design 2: Line Plot with Plotly** 
+#### **Design 2: Line Plot with Plotly**
 
 ```{r}
 library(ggplot2) 

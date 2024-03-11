@@ -187,9 +187,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>I’m making a data frame called “<strong>ImmigrantVisaNumber2014</strong>” and adding columns named “Category,” “<strong>Visa Issuances at Offices Abroad</strong>,” and “<strong>USCIS Adjustments</strong>”, I’m putting in the data from <strong>Fig1</strong> into these columns.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>ImmigrantVisaNumber2014 <span class="ot">=</span> <span class="fu">data.frame</span>( </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">Category =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"F1"</span>, <span class="st">"F2A"</span>, <span class="st">"F2B"</span>, <span class="st">"F4"</span>, <span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>, <span class="st">"E4"</span>, <span class="st">"E5"</span>, <span class="st">"DV"</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"F1"</span>, <span class="st">"F2A"</span>, <span class="st">"F2B"</span>, <span class="st">"F4"</span>, <span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>, <span class="st">"E4"</span>, <span class="st">"E5"</span>, <span class="st">"DV"</span>)), </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">Visa_Issuances_At_Offices_Abroad =</span> <span class="fu">c</span>(<span class="dv">21511</span>, <span class="dv">80041</span>, <span class="dv">15137</span>, <span class="dv">21931</span>, <span class="dv">59140</span>, <span class="dv">1680</span>, <span class="dv">1880</span>, <span class="dv">7088</span>, <span class="dv">1489</span>, <span class="dv">9228</span>), </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">USCIS_Adjustments =</span> <span class="fu">c</span>(<span class="dv">2480</span>, <span class="dv">9451</span>, <span class="dv">2382</span>, <span class="dv">2100</span>, <span class="dv">7020</span>, <span class="dv">38928</span>, <span class="dv">47191</span>, <span class="dv">35611</span>, <span class="dv">6798</span>, <span class="dv">1464</span>) </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">Category =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"F1"</span>, <span class="st">"F2A"</span>, <span class="st">"F2B"</span>, <span class="st">"F3"</span> ,<span class="st">"F4"</span>, <span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>, <span class="st">"E4"</span>, <span class="st">"E5"</span>, <span class="st">"DV"</span>), <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"F1"</span>, <span class="st">"F2A"</span>, <span class="st">"F2B"</span>,<span class="st">"F3"</span>, <span class="st">"F4"</span>, <span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>, <span class="st">"E4"</span>, <span class="st">"E5"</span>, <span class="st">"DV"</span>)), </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">Visa_Issuances_At_Offices_Abroad =</span> <span class="fu">c</span>(<span class="dv">21511</span>, <span class="dv">80041</span>, <span class="dv">15137</span>, <span class="dv">21931</span>, <span class="dv">59140</span>, <span class="dv">1680</span>, <span class="dv">1880</span>, <span class="dv">7088</span>, <span class="dv">1489</span>, <span class="dv">922</span>, <span class="dv">51018</span>), </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">USCIS_Adjustments =</span> <span class="fu">c</span>(<span class="dv">2480</span>, <span class="dv">9451</span>, <span class="dv">2382</span>, <span class="dv">2100</span>, <span class="dv">7020</span>, <span class="dv">38928</span>, <span class="dv">47191</span>, <span class="dv">35611</span>, <span class="dv">6798</span>, <span class="dv">1464</span> , <span class="dv">1324</span>) </span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -197,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="re-design-1-bar-plot-with-ggplot2"><strong>Re-Design 1: Bar Plot with GGplot2</strong></h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/first photo.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+<p><img src="images/Screenshot2024-03-10at5.47.08P.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
 </figure>
 </div>
 <ul>
@@ -208,7 +208,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>. After redesigning the graph with Plotly, I’ve made it more user-friendly and easy to understand for everyone.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/1 .png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+<p><img src="images/bar plt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
 </figure>
 </div>
 <p><strong>Fig3: Redesigned Graph (using Plotly)</strong></p>
@@ -226,7 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>I’m examining the visa trends for the year 2024, specifically focusing on the counts for ‘Visa Issuances at Offices Abroad’ and ‘USCIS Adjustments.’ By analyzing these columns individually, I aim to gain insights into the distribution and trends of visas issued in each category for the specified year.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/redesign2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/line plt.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
 </figure>
 </div>
 <p><strong>Fig4: Redesigned Graph (using Plotly)</strong></p>
@@ -241,7 +241,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="re-design-3-bubble-plot" class="level4">
 <h4 class="anchored" data-anchor-id="re-design-3-bubble-plot"><strong>Re-Design 3: Bubble Plot</strong></h4>
-<p><img src="images/point.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/bubble plot .png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="500"></p>
+</figure>
+</div>
 <p><strong>Fig4: Redesigned Graph (using Plotly)</strong></p>
 </section>
 <section id="why-i-used-bubble-plot" class="level4">

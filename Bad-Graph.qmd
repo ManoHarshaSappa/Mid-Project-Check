@@ -8,7 +8,7 @@ editor: visual
 
 #### By : MANO HARSHA SAPPA
 
-------------------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ### Misleading Chart:
 
@@ -22,26 +22,22 @@ While perusing the latest United States government chart titled "Immigrant Visa 
 
 1.  **Unnecessary 3D Effect :** The 3D view of the graph makes it appear a bit weird. It's like looking at things from an odd angle, making it hard to figure out the real heights of the bars.
 
-```{=html}
 <!-- -->
-```
+
 2.  **Confusing E1 Visa Number:** The E1 visa bar is placed close to a line marking 40,000, and because of the 3D view, it's tricky to tell if it's above or below that line. This can lead to misunderstandings.
 
-```{=html}
 <!-- -->
-```
+
 3.  **Too Much Stuff:** The 3D stuff like shadows and angles makes the graph messy. It's like having too many decorations that don't really help us understand the information better.
 
 **Graph Improvement Steps:** 
 
 4.  **Shift to 2D Format:** Change the original 3D graph to a straightforward 2D bar chart. This simplification removes unnecessary visual complexity, making it easier for viewers to grasp the data accurately without any distortions. 
 
-```{=html}
 <!-- -->
-```
+
 5.  **Side-by-Side Columns:** Instead of having a single bar spanning two columns, use the "position = dodge" feature to display the columns side by side. This adjustment enhances visual clarity, allowing viewers to effortlessly compare the two categories. 
 
-```{=html}
 <!-- -->
-```
+
 6.  **Incorporate bublle Plot for Pattern Analysis:** Integrate a bubble plot alongside the bar chart to uncover underlying patterns and trends within the data. Scatter plots are effective tools for highlighting relationships between variables, providing an additional visual element that enhances the audience's understanding.
