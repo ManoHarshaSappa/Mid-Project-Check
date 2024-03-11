@@ -44,4 +44,4 @@ While perusing the latest United States government chart titled "Immigrant Visa 
 ```{=html}
 <!-- -->
 ```
-6.  **Incorporate Scatter Plot for Pattern Analysis:** Integrate a scatter plot alongside the bar chart to uncover underlying patterns and trends within the data. Scatter plots are effective tools for highlighting relationships between variables, providing an additional visual element that enhances the audience's understanding.
+6.  **Incorporate bublle Plot for Pattern Analysis:** Integrate a bubble plot alongside the bar chart to uncover underlying patterns and trends within the data. Scatter plots are effective tools for highlighting relationships between variables, providing an additional visual element that enhances the audience's understanding.
